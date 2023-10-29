@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Permanent+Marker&family=Poppins:wght@100;300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: #f85032;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Inika', Courier, monospace;
+    text-align: right;
+    height: 35px;
+    justify-items: center;
+    justify-content: center;
+}
+nav a{
+   padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-indent: 2px;
+}
+nav a:hover{
+    font-weight: 800;
+    color: purple;
+}
+.list-unstyled a{
+    text-decoration: none;
+}
+.banner{
+    width: 90%;
+}
+.banner-img{
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    nav{
+        height: 30px;
+    }
+    nav a{
+        font-size: 1.2rem;
+    }
+    .img_carousel{
+        height: 250px;
+    }
+}

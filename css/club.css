@@ -1,30 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika&family=Permanent+Marker&family=Poppins:wght@100;300;400;500;800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    background: #f85032;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+nav {
+    background: #f85032;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e73827, #f85032);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e73827, #f85032);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Inika', Courier, monospace;
     text-align: right;
     height: 35px;
     justify-items: center;
     justify-content: center;
 }
-nav a{
-   padding: 10px;
+
+nav a {
+    padding: 10px;
     color: aliceblue;
     text-decoration: none;
     font-size: 1.5rem;
     text-indent: 2px;
 }
-nav a:hover{
+
+nav a:hover {
     font-weight: 800;
     color: purple;
 }
+
 header {
     background-image: url("https://res.cloudinary.com/dyhftwfrw/image/upload/v1698587814/web_siman/c04yuehm3kv6m3h0uhrg.jpg");
     width: 100%;
@@ -43,9 +51,10 @@ header {
     color: blue;
     font-weight: 600;
     text-align: center;
-    justify-items:center;
+    justify-items: center;
 }
-.bienvenida p{
+
+.bienvenida p {
     text-align: center;
     width: 75%;
     padding: 20px;
@@ -56,7 +65,8 @@ header {
     border-radius: 25px;
     background: rebeccapurple;
 }
-.clubes{
+
+.clubes {
     background-color: #1b004b;
     width: 100%;
     height: 100%;
@@ -70,9 +80,9 @@ header {
     text-align: center;
     padding: 10px;
     color: white;
-    
 }
-.clubes div{
+
+.clubes div {
     width: 100%;
     height: 100%;
     background: #7f00b2;
@@ -83,25 +93,41 @@ header {
     justify-items: center;
 }
 
-.clubes div h3{
+.clubes div h3 {
     text-align: center;
 }
-.clubes div p{
+
+.clubes div p {
     height: 100%;
     text-align: justify;
 }
-.clubes div img{
+
+.clubes div img {
     text-align: center;
     width: 60%;
     height: 60%;
     object-fit: contain;
     border-radius: 25px;
 }
-.list-unstyled a{
+
+.list-unstyled a {
     text-decoration: none;
 }
+
 @media screen and (max-width: 768px) {
-    .clubes{
+    nav {
+        height: 30px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .img_carousel {
+        height: 250px;
+    }
+
+    .clubes {
         grid-template-columns: repeat(1, 1fr);
     }
 }
