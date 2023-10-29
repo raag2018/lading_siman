@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Permanent+Marker&family=Poppins:wght@100;300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: #f85032;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Inika', Courier, monospace;
+    text-align: right;
+    height: 35px;
+    justify-items: center;
+    justify-content: center;
+}
+nav a{
+   padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-indent: 2px;
+}
+nav a:hover{
+    font-weight: 800;
+    color: purple;
+}
+header {
+    background-image: url("https://res.cloudinary.com/dyhftwfrw/image/upload/v1698587814/web_siman/c04yuehm3kv6m3h0uhrg.jpg");
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bienvenida {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: blue;
+    font-weight: 600;
+    text-align: center;
+    justify-items:center;
+}
+.bienvenida p{
+    text-align: center;
+    width: 75%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    opacity: .8;
+    border-radius: 25px;
+    background: rebeccapurple;
+}
+.clubes{
+    background-color: #1b004b;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 30px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    
+}
+.clubes div{
+    width: 100%;
+    height: 100%;
+    background: #7f00b2;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.clubes div h3{
+    text-align: center;
+}
+.clubes div p{
+    height: 100%;
+    text-align: justify;
+}
+.clubes div img{
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    border-radius: 25px;
+}
+.list-unstyled a{
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .clubes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
